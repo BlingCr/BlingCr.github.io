@@ -95,97 +95,11 @@
 <p><img src="https://i.loli.net/2020/01/10/KaiQrGVXjI7NPyh.jpg" alt="s2.jpg"></p>
 <p><img src="https://i.loli.net/2020/01/10/lodM67RYZniLk85.jpg" alt="s3.jpg"></p>
 <p><img src="https://i.loli.net/2020/01/10/FlZrAwic7nUH3SX.jpg" alt="s4.jpg"></p>
-<hr>
-<h2 id="【学习进度】"><a href="#【学习进度】" class="headerlink" title="【学习进度】"></a>【学习进度】</h2><ul>
-<li>java</li>
-</ul>
-<ol>
-<li>容器（泛型ArrayList ，哈希表HashMap&amp;HashSet）</li>
-<li>继承与多态（向上、向下造型）</li>
-<li>面向对象设计原则</li>
-<li>抽象（未学接口）</li>
-<li>异常处理</li>
-</ol>
-<ul>
-<li>C</li>
-</ul>
-<ol>
-<li>字符串&amp;字符串操作</li>
-<li>指针（数组指针 指针数组 二级数组 文件指针）</li>
-<li>文件操作</li>
-<li>结构体</li>
-</ol>
-<ul>
-<li>IDL</li>
-</ul>
-<ol>
-<li>文件导入，导出为.sav及.exe</li>
-<li>数组操作（吹爆IDL的数组，太方便了！）（锤爆IDL的自带函数的命名，什么鬼呀！）</li>
-<li>字符串（未完）</li>
-</ol>
-<ul>
-<li>py</li>
-</ul>
-<ol>
-<li>基础知识 剩下os库</li>
-<li>进阶知识 完成爬虫</li>
-</ol>
-<ul>
-<li>verilog</li>
-</ul>
-<ol>
-<li>【禁忌之地】基础断层，未到时宜（？）</li>
-</ol>
-<ul>
-<li>C++</li>
-</ul>
-<ol>
-<li>【禁忌之地】不要一次学太多……</li>
-</ol>
-<hr>
-<h2 id="【题外话】"><a href="#【题外话】" class="headerlink" title="【题外话】"></a>【题外话】</h2><p>迟早有一天我会弄混各种语言的语法</p>
-<p>以获取字符串的某个字符（下称为“某一项”）为例</p>
-<p><strong>C</strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> str[] = <span class="string">"abcde"</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(“%c”,str[<span class="number">3</span>]);</span></pre></td></tr></table></figure>
-
-<p>先构造字符串再输出某一项</p>
-<p>C语言的字符串用方括号来得到某一项</p>
-<p>————————————</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%c"</span>, <span class="string">"abcde"</span>[<span class="number">3</span>] );</span></pre></td></tr></table></figure>
-
-<p>也可以直接对引号括起来的字符串常量用方括号来得到某一项</p>
-<p>==============================</p>
-<p><strong>java</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"abcde"</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">System.out.println(str.charAt(<span class="number">3</span>));</span></pre></td></tr></table></figure>
-<p>先构造字符串再输出某一项</p>
-<p>java的字符串不能用方括号，要用.charAt()来得到某一项</p>
-<p>————————————</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"abcde"</span>.charAt(<span class="number">3</span>));</span></pre></td></tr></table></figure>
-<p>也可以直接对引号括起来的字符串常量用.charAt()</p>
-<p><del>是charat()不是getchar()！！！</del></p>
-<p>==============================</p>
-<p><strong>py</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">str=<span class="string">"abcde"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">print(str[<span class="number">3</span>])</span></pre></td></tr></table></figure>
-
-<p>先构造字符串再输出某一项</p>
-<p>与C语言类似双引号括起来的字符串可以用方括号来得到某一项</p>
-<p>————————————</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">print(<span class="string">"abcde"</span>[<span class="number">3</span>])</span></pre></td></tr></table></figure>
-<p>也可以直接对引号括起来的字符串常量用方括号来得到某一项</p>
-<p>==============================</p>
-<p><strong>IDL</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">str&#x3D;&quot;abcde&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">print,str.charat(3)</span></pre></td></tr></table></figure>
-<p>惊人地与java一致，是使用.charAt()来得到某一项</p>
-<p>————————————</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">print,&quot;abcde&quot;.charat(3)</span></pre></td></tr></table></figure>
-
-<p>惊人地与java不一致（……）</p>
-<p>不可以直接对引号括起来的字符串常量用.charAt()</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blingcr.github.io/2019/12/06/hello-world/" data-id="ck58cyjd300004wtoe2ibanvb" class="article-share-link">Share</a>
+      <a data-url="https://blingcr.github.io/2019/12/06/hello-world/" data-id="ck5dfy0xi0000msto77nh5jdy" class="article-share-link">Share</a>
       
       
     </footer>
